@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Calculator Example
+        </h3>
+        <div slot="footer">
+               <!-- <lightning-badge label={result}></lightning-badge> -->
+               <c-calcu-Result result={result}></c-calcu-Result>
+        </div>
+        <p class="slds-p-horizontal_small">
+            <lightning-input label="Enter fnumber" name="fnumber" value={fnumber} onchange={handleChanges}></lightning-input>
+            <lightning-input label="Enter snumber" name="snumber" value={snumber} onchange={handleChanges}></lightning-input>
+        </p>
+    </lightning-card> 
+</template>
